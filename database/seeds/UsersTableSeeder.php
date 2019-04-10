@@ -3,7 +3,7 @@
 use App\User;
 use Illuminate\Database\Seeder;
 
-class UserTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -21,6 +21,7 @@ class UserTableSeeder extends Seeder
         $user->phone ="0123456789";
         $user->image ="";
         $user->role = \App\Http\Controllers\RoleConstant::ADMIN;
+        $user->save();
 
     }
 }
